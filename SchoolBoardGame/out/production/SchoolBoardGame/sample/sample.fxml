@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="806.0" prefWidth="1316.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Canvas fx:id="canvas" height="200.0" width="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <HBox alignment="BOTTOM_CENTER" prefHeight="39.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #0C0C0C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="whiteChalk" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="10.0" prefWidth="100.0" style="-fx-background-color: #FFFFFF;" />
+            <Button fx:id="redChalk" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="10.0" prefWidth="100.0" style="-fx-background-color: #CD3F3F;" />
+            <Button fx:id="greenChalk" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="10.0" prefWidth="100.0" style="-fx-background-color: #5A9D7B;" />
+            <Button fx:id="yellowChalk" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="10.0" prefWidth="100.0" style="-fx-background-color: #FFFF80;" />
+            <Button fx:id="pinkChalk" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="10.0" prefWidth="100.0" style="-fx-background-color: #FF80C0;" />
+            <Button fx:id="eraser" minHeight="10.0" mnemonicParsing="false" onAction="#chalkClicked" prefHeight="41.0" prefWidth="163.0" style="-fx-background-color: rgba(0,0,0,0);">
+               <graphic>
+                  <ImageView fitHeight="42.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/eraser.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
